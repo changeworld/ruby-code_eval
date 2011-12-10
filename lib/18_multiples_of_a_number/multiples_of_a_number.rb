@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
 def multiples_of_a_number(line)
-  x, n = line.split(",")
-  x = x.to_i
-  n = n.to_i
+  x, n = line.split(",").map {|str| str = str.to_i}
   while (n <= x)
     n += n
   end

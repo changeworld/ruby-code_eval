@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
 def bit_positions(line)
-  n, p1, p2 = line.split(",")
+  n, p1, p2 = line.split(",").map {|str| str = str.to_i}
   bits = []
-  n = n.to_i
-  p1 = p1.to_i
-  p2 = p2.to_i
   while (n >= 1)
     bits << n % 2
     n = (n / 2).to_i
