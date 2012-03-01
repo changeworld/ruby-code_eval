@@ -2,9 +2,9 @@
 
 def self_describing_numbers(line)
   flag = 1
-  number = line.split(//)
+  num = line.split(//)
   (0..line.size-1).each do |i|
-    flag = 0 unless (line.count("#{i}") == number[i].to_i)
+    flag = 0 unless (line.count("#{i}") == num[i].to_i)
   end
   flag
 end
