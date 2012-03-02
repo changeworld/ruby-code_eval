@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def system_endian
   # http://www.ruby-lang.org/ja/old-man/html/pack_A5C6A5F3A5D7A5ECA1BCA5C8CAB8BBFACEF3.html
   # エンディアン非依存
