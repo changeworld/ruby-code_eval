@@ -6,7 +6,7 @@ def sum_of_integers(line)
   begin
     nums.inject(0) {|sum, i| sum_nums << sum += i; sum}
   end while nums.shift
-  puts sum_nums.max
+  sum_nums.max
 end
 
 filename = ARGV[0]
